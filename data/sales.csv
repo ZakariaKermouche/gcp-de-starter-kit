@@ -1,0 +1,6 @@
+order_id,user_id,product,amount,order_date
+1,101,phone,500,2024-01-01
+2,102,laptop,1200,2024-01-02
+3,101,mouse,50,2024-01-03
+4,103,keyboard,80,2024-01-03
+5,102,screen,300,2024-01-04
