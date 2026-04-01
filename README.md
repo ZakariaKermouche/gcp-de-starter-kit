@@ -1,56 +1,40 @@
-# GCP Data Engineering Foundations
+# GCP Data Engineering Project
 
-This project demonstrates core Data Engineering concepts using Google Cloud Platform:
+This repository showcases my hands-on journey building data pipelines on Google Cloud Platform.
 
-- Data ingestion via Cloud Storage
-- Data warehousing with BigQuery
-- Analytical SQL (joins, aggregations, window functions)
+## 🚀 Projects
 
-## Architecture
-### Data Flow
+### 1. Batch Analytics (BigQuery)
+- Data loaded from Cloud Storage
+- SQL analytics (joins, aggregations, window functions)
 
-CSV Files → Cloud Storage → BigQuery → SQL Analysis
+### 2. Streaming Pipeline (Pub/Sub)
+- Event-driven architecture using Pub/Sub
+- Python producer & consumer
 
-## Technologies Used
-- Google Cloud Platform (GCP)
-- BigQuery
-- Cloud Storage
+➡️ See details: [pubsub-streaming](./pubsub-streaming)
+
+---
+
+## 🧱 Architecture
+
+Batch:
+CSV → Cloud Storage → BigQuery → SQL
+
+Streaming:
+Producer → Pub/Sub → Consumer
+
+---
+
+## 🛠️ Technologies
+
+- GCP (BigQuery, Pub/Sub, Cloud Storage)
+- Python
 - SQL
-- Bash / gcloud CLI
+- gcloud CLI
 
-## Dataset
-### Users Table
-- id
-- name
-- age
+---
 
-### sales Table
-- order_id
-- user_id
-- amount
-- order_date
+## 📌 Status
 
-## Key Features
-- Data loaded from Cloud Storage into BigQuery
-- Data modeling with relational tables
-- SQL queries including:
-  - Aggregations
-  - Joins
-  - Window functions
-
-## Example Queries
-```
--- Total spending per user
-SELECT 
-  u.name,
-  SUM(o.amount) AS total_spent
-FROM `project.dataset.users` u
-JOIN `project.dataset.orders` o
-ON u.id = o.user_id
-GROUP BY u.name;
-```
-
-## How to Run
-1. Upload CSV files to Cloud Storage
-2. Load data into BigQuery
-3. Run SQL queries using BigQuery or CLI
+🚧 In progress — next step: Dataflow → BigQuery pipeline
