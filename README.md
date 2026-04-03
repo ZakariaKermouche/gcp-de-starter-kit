@@ -14,12 +14,26 @@ This repository showcases my hands-on journey building data pipelines on Google 
 
 ➡️ See details: [pubsub-streaming](./pubsub-streaming)
 
+### 3. Batch ETL Pipeline (Dataflow)
+
+Pipeline:
+Cloud Storage → Dataflow → BigQuery
+
+Features:
+- Data validation
+- Data transformation
+- Schema management
+- Scalable processing
+
+➡️ [Dataflow ETL Module](./dataflow-etl)
+
+
 ---
 
 ## 🧱 Architecture
 
 Batch:
-CSV → Cloud Storage → BigQuery → SQL
+CSV → Cloud Storage → Dataflow → BigQuery
 
 Streaming:
 Producer → Pub/Sub → Consumer
@@ -28,13 +42,16 @@ Producer → Pub/Sub → Consumer
 
 ## 🛠️ Technologies
 
-- GCP (BigQuery, Pub/Sub, Cloud Storage)
+- GCP (BigQuery, Pub/Sub, Dataflow, Cloud Storage)
 - Python
 - SQL
 - gcloud CLI
+- Apache Beam
 
 ---
 
+
 ## 📌 Status
 
-🚧 In progress — next step: Dataflow → BigQuery pipeline
+✅ Batch ETL completed  
+🚧 Next: Streaming pipeline (Pub/Sub → Dataflow → BigQuery)
