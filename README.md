@@ -27,6 +27,17 @@ Features:
 
 ➡️ [Dataflow ETL Module](./dataflow-etl)
 
+---
+
+### 4. Streaming Pipeline (Dataflow)
+
+Pub/Sub → Dataflow → BigQuery
+
+- Real-time event ingestion
+- Streaming processing
+- Continuous data loading
+
+➡️ [Streaming Pipeline](./dataflow-streaming)
 
 ---
 
@@ -35,14 +46,18 @@ Features:
 Batch:
 CSV → Cloud Storage → Dataflow → BigQuery
 
-Streaming:
-Producer → Pub/Sub → Consumer
+Streaming
+Producer → Pub/Sub → Dataflow → BigQuery
 
 ---
 
 ## 🛠️ Technologies
 
-- GCP (BigQuery, Pub/Sub, Dataflow, Cloud Storage)
+- GCP:
+  - BigQuery
+  - Pub/Sub
+  - Dataflow
+  - Cloud Storage
 - Python
 - SQL
 - gcloud CLI
@@ -53,5 +68,6 @@ Producer → Pub/Sub → Consumer
 
 ## 📌 Status
 
-✅ Batch ETL completed  
-🚧 Next: Streaming pipeline (Pub/Sub → Dataflow → BigQuery)
+✅ Batch pipeline complete  
+✅ Streaming pipeline complete  
+🚀 Production-ready foundations
